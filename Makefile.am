@@ -23,18 +23,15 @@ AM_CPPFLAGS = \
 
 AM_CFLAGS = \
 	${my_CFLAGS} \
-	-fvisibility=hidden \
-	-ffunction-sections \
-	-fdata-sections
+	-fvisibility=hidden
 
 AM_LDFLAGS = \
-	-Wl,--gc-sections \
 	-Wl,--as-needed
 
 DISTCHECK_CONFIGURE_FLAGS = \
 	--disable-debug \
 	--enable-rule_generator \
-	--enable-floppy \
+	--disable-floppy \
 	--with-selinux \
 	--disable-gtk-doc \
 	--with-systemdsystemunitdir=$$dc_install_base/$(systemdsystemunitdir)
