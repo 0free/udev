@@ -29,12 +29,6 @@ AM_LDFLAGS = \
 	-Wl,--as-needed
 
 DISTCHECK_CONFIGURE_FLAGS = \
-	--disable-debug \
-	--enable-rule_generator \
-	--disable-floppy \
-	--with-selinux \
-	--disable-gtk-doc \
-	--with-systemdsystemunitdir=$$dc_install_base/$(systemdsystemunitdir)
 
 BUILT_SOURCES =
 EXTRA_DIST =
