@@ -79,7 +79,7 @@ AC_ARG_WITH(usb-ids-path,
        [if test -n "$usbids" ; then
               USB_DATABASE="$usbids"
        else
-              PKG_CHECK_MODULES(USBUTILS, usbutils >= 014)
+              PKG_CHECK_MODULES(USBUTILS, usbutils >= 0)
               AC_SUBST([USB_DATABASE], [$($PKG_CONFIG --variable=usbids usbutils)])
        fi])
 AC_MSG_CHECKING([for USB database location])
