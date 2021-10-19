@@ -23,6 +23,7 @@
 #include <sys/stat.h>
 #include <sys/ioctl.h>
 #include <sys/socket.h>
+#include <sys/sysmacros.h>
 #include <linux/sockios.h>
 
 #include "libudev.h"
