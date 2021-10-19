@@ -36,6 +36,7 @@
 #include <sys/stat.h>
 #include <sys/time.h>
 #include <sys/ioctl.h>
+#include <sys/sysmacros.h>
 #include <linux/cdrom.h>
 
 #include "libudev.h"
